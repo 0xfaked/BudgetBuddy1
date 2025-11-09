@@ -6,6 +6,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  transpilePackages: ["@react-email/components", "inngest"],
   images: {
     unoptimized: true,
   },
