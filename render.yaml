@@ -3,8 +3,8 @@ services:
     name: budgetbuddy
     env: node
     plan: free
-    buildCommand: pnpm install --no-frozen-lockfile && pnpm run build
-    startCommand: pnpm start
+    buildCommand: npx --yes pnpm@9 install --no-frozen-lockfile && npx pnpm run build
+    startCommand: npx pnpm start
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
