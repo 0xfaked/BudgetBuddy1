@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: budgetbuddy
+    env: node
+    plan: free
+    buildCommand: pnpm install --no-frozen-lockfile && pnpm run build
+    startCommand: pnpm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      # Fill these in Render dashboard with your real values
+      - key: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+        value: "REPLACE_ME"
+      - key: CLERK_SECRET_KEY
+        value: "REPLACE_ME"
+      - key: DATABASE_URL
+        value: "REPLACE_ME"
+      - key: DIRECT_URL
+        value: "REPLACE_ME"
+      - key: ARCJET_KEY
+        value: ""
