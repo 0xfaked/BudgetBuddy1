@@ -9,14 +9,15 @@ services:
     envVars:
       - key: NODE_VERSION
         value: 18
-      # Fill these in Render dashboard with your real values
       - key: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-        value: "REPLACE_ME"
+        value: pk_test_cGlja2VkLWphdmVsaW4tNS5jbGVyay5hY2NvdW50cy5kZXYk
       - key: CLERK_SECRET_KEY
-        value: "REPLACE_ME"
+        value: sk_test_DX6T2nj3xxHBAQsLiJ4X4CWRf5tDDyKAlJqNlt2JmY
       - key: DATABASE_URL
-        value: "REPLACE_ME"
-      - key: DIRECT_URL
-        value: "REPLACE_ME"
+        value: postgresql://neondb_owner:npg_3qHTIM5jXAuJ@ep-jolly-math-adrrhovv-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
       - key: ARCJET_KEY
-        value: ""
+        value: ajkey_01jnqn0ewcfqnthth4afn0bdp2
+      - key: GEMINI_API_KEY
+        value: AIzaSyBgN2TeC2JqQ0zCTM3P8vvDVG0b2BftztM
+      - key: RESEND_API_KEY
+        value: re_9tC7Jy2p_G9TEvTLcA4VqiR8fFKzin84C
