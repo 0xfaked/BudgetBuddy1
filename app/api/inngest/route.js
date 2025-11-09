@@ -8,6 +8,10 @@ import {
   triggerRecurringTransactions,
 } from "@/lib/inngest/function";
 
+// Mark route as dynamic
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 export const { GET, POST, PUT } = serve({
   client: inngest,
   functions: [
